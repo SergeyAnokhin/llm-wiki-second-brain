@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0abbff067c032c25",
+        "id": "b4240b00deacdfee",
         "type": "tabs",
         "children": [
           {
-            "id": "1464db5424ee4381",
+            "id": "a2ce79801ce7b4cf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "raw/Post by @karpathy on X.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Post by @karpathy on X"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -183,8 +179,33 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "1464db5424ee4381",
+  "active": "a2ce79801ce7b4cf",
   "lastOpenFiles": [
-    "raw/Post by @karpathy on X.md"
+    "raw/pages/CONTRIBUTING.md",
+    "raw/links/home-assistant-core- -house_with_garden- Open source home automation that puts local control and privacy first-.url",
+    "Clippings/Developing Home Assistant Core in a VSCode Devcontainer.md",
+    "Clippings/Creating a Home Assistant component.md",
+    "Clippings/My first Home Assistant custom component – Sean's Technical Ramblings.md",
+    "raw/code/Entities examples from old project.md",
+    "Clippings",
+    "raw/links/home-assistant-example-custom-config- A collection of example custom components for Home Assistant.url",
+    "raw/links/SergeyAnokhin-camera_archiver- Home assiatant Custom component- Camera Archiver.url",
+    "raw/links",
+    "raw/code/Code examples from Camera Archiver (old project).md",
+    "raw/pages/Building a Home Assistant Custom Component Part 1 Project Structure and Basics.md",
+    "raw/code/__init__.py",
+    "raw/code",
+    "raw/pages/The Great Migration  Home Assistant Developer Docs.md",
+    "raw/pages/Building a Home Assistant Custom Component Part 5 Debugging.md",
+    "raw/pages/Building a Home Assistant Custom Component Part 4 Options Flow.md",
+    "raw/pages/Building a Home Assistant Custom Component Part 3 Config Flow.md",
+    "raw/pages/Building a Home Assistant Custom Component Part 2 Unit Testing and Continuous Integration.md",
+    "raw/pages/Repository of official custom_components · home-assistantexample-custom-config.md",
+    "raw/pages/Creating a custom component for home assistant.md",
+    "raw/pages/__init__.py",
+    "raw/Post by @karpathy on X.md",
+    "raw/image-with-text/0012_project_tree.png",
+    "raw/image-with-text/Не подтвержден 743939.crdownload",
+    "raw/image-with-text"
   ]
 }
