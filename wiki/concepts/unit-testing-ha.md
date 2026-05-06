@@ -5,7 +5,7 @@ created: 2026-05-05
 updated: 2026-05-05
 ---
 
-# Unit Testing HA Custom Components
+# Unit Testing HA
 
 Unit tests catch bugs before users do. The HA ecosystem provides dedicated tooling that makes testing integrations much easier than general Python testing.
 

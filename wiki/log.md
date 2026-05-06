@@ -2,6 +2,9 @@
 
 Chronological record of all operations.
 
+## [2026-05-06] lint | Health check
+Found 4 errors, 2 warnings, 3 info items. Fixed: corrected H1 titles in debugging-devcontainer.md and unit-testing-ha.md; created [[GitHub Actions CI]], [[Platform Schema (Voluptuous)]], [[Pre-commit Hooks]], [[GitHub]]; disambiguated [[The Great Migration — HA Developer Blog]] source page title; created synthesis page [[Sync vs Async Setup]]; updated index.md.
+
 ## [2026-05-05] setup | Vault initialized
 Created vault "llm-wiki-second-brain" для разработки custom integrations и плагинов для Home Assistant.
 Agent configs: CLAUDE.md, GEMINI.md, .github/copilot-instructions.md.

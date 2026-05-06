@@ -11,7 +11,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Building a HA Custom Component Part 5: Debugging]] — VS Code devcontainer, breakpoints, local HA instance
 - [[Creating a Custom Component for Home Assistant (TheStaticTurtle)]] — Beginner walkthrough, synchronous setup, SwitchEntity
 - [[HA Example Custom Config Repository]] — Official HA example custom components reference repo
-- [[The Great Migration]] — HA 0.87 file structure change: light/hue.py → hue/light.py
+- [[The Great Migration — HA Developer Blog]] — HA 0.87 file structure change: light/hue.py → hue/light.py
 - [[Contributing to Home Assistant]] — PR process, dev branch, issue tracker
 - [[Camera Archiver — Init Code Examples]] — Pipeline architecture, voluptuous schemas, Platform enum
 - [[Camera Archiver — Entity Code Examples]] — CoordinatorEntity, _attr_* pattern, event-driven sensors
@@ -19,6 +19,7 @@ Master catalog of all wiki pages. Updated on every ingest.
 ## Entities
 
 - [[Aaron Godfrey]] — Author of the 5-part custom component tutorial series, cookiecutter template
+- [[GitHub]] — Web platform / REST API used as data source in Aaron Godfrey's tutorial
 - [[Paulus Schoutsen]] — HA founder, authored The Great Migration (0.87 file structure change)
 - [[HACS]] — Home Assistant Community Store, de-facto distribution platform for custom integrations
 - [[Camera Archiver]] — Sergey's personal HA integration for camera footage archiving (pipeline architecture)
@@ -36,5 +37,10 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Debugging Devcontainer]] — VS Code + Docker devcontainer, breakpoints, logging config
 - [[SCAN_INTERVAL]] — Module-level polling interval constant for platform files
 - [[The Great Migration]] — HA 0.87 architectural change establishing current file layout convention
+- [[GitHub Actions CI]] — hassfest + Python CI workflows for custom component validation
+- [[Platform Schema (Voluptuous)]] — PLATFORM_SCHEMA / CONFIG_SCHEMA YAML config validation
+- [[Pre-commit Hooks]] — Local code quality checks: black, flake8, mypy, isort, bandit
 
 ## Synthesis
+
+- [[Sync vs Async Setup]] — Side-by-side comparison of old sync and modern async component patterns

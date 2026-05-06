@@ -5,7 +5,7 @@ created: 2026-05-05
 updated: 2026-05-05
 ---
 
-# The Great Migration
+# The Great Migration — HA Developer Blog
 
 **Source:** `The Great Migration  Home Assistant Developer Docs.md`
 **Author:** [[Paulus Schoutsen]]

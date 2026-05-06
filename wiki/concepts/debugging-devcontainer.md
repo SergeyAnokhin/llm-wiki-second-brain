@@ -5,7 +5,7 @@ created: 2026-05-05
 updated: 2026-05-05
 ---
 
-# Debugging with VS Code Devcontainer
+# Debugging Devcontainer
 
 The recommended way to debug a Home Assistant custom component locally. Uses the devcontainer from `home-assistant/core` to run a full HA instance inside Docker — without touching your production instance.
 
