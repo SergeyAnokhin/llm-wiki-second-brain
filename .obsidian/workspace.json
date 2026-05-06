@@ -181,6 +181,12 @@
   },
   "active": "6b79167d62ef8dff",
   "lastOpenFiles": [
+    "output/toggle_counter/sensor.py",
+    "output/toggle_counter/switch.py",
+    "output/toggle_counter/__init__.py",
+    "output/toggle_counter/const.py",
+    "output/toggle_counter/manifest.json",
+    "output/toggle_counter",
     "output/toggle-counter-component.md",
     "raw/pages/My first Home Assistant custom component – Sean's Technical Ramblings.md",
     "raw/pages/Developing Home Assistant Core in a VSCode Devcontainer.md",
@@ -206,17 +212,11 @@
     "wiki/concepts/config-flow.md",
     "wiki/concepts/manifest-json.md",
     "wiki/concepts/custom-component-structure.md",
-    "wiki/sources/camera-archiver-entities-code.md",
     "raw/links/home-assistant-core- -house_with_garden- Open source home automation that puts local control and privacy first-.url",
     "Clippings",
     "raw/links/home-assistant-example-custom-config- A collection of example custom components for Home Assistant.url",
     "raw/links/SergeyAnokhin-camera_archiver- Home assiatant Custom component- Camera Archiver.url",
     "raw/links",
-    "raw/code/__init__.py",
-    "raw/code",
-    "raw/pages/__init__.py",
-    "raw/image-with-text/0012_project_tree.png",
-    "raw/image-with-text/Не подтвержден 743939.crdownload",
-    "raw/image-with-text"
+    "raw/image-with-text/0012_project_tree.png"
   ]
 }

@@ -1,0 +1,1 @@
+DOMAIN = "toggle_counter"
