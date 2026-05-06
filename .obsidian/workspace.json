@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b4240b00deacdfee",
+        "id": "1721e563aa807346",
         "type": "tabs",
         "children": [
           {
-            "id": "a2ce79801ce7b4cf",
+            "id": "5c43fd55afb3f2e0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -179,8 +179,15 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "a2ce79801ce7b4cf",
+  "active": "6b79167d62ef8dff",
   "lastOpenFiles": [
+    "wiki/synthesis/sync-vs-async-setup.md",
+    "wiki/entities/github.md",
+    "wiki/concepts/pre-commit-hooks.md",
+    "wiki/concepts/platform-schema-voluptuous.md",
+    "wiki/concepts/github-actions-ci.md",
+    "Custom Component Structure.md",
+    "wiki/concepts/entity-types.md",
     "wiki/entities/camera-archiver.md",
     "wiki/entities/hacs.md",
     "wiki/entities/paulus-schoutsen.md",
@@ -191,7 +198,6 @@
     "wiki/concepts/unit-testing-ha.md",
     "wiki/concepts/debugging-devcontainer.md",
     "wiki/concepts/async-patterns.md",
-    "wiki/concepts/entity-types.md",
     "wiki/concepts/options-flow.md",
     "wiki/concepts/config-flow.md",
     "wiki/concepts/manifest-json.md",
@@ -201,12 +207,6 @@
     "wiki/sources/contributing-to-ha.md",
     "wiki/sources/the-great-migration.md",
     "wiki/sources/ha-example-custom-config-repo.md",
-    "wiki/sources/creating-custom-component-thestaticturtle.md",
-    "wiki/sources/building-ha-custom-component-part5.md",
-    "wiki/sources/building-ha-custom-component-part4.md",
-    "wiki/sources/building-ha-custom-component-part3.md",
-    "wiki/sources/building-ha-custom-component-part2.md",
-    "wiki/sources/building-ha-custom-component-part1.md",
     "raw/links/home-assistant-core- -house_with_garden- Open source home automation that puts local control and privacy first-.url",
     "Clippings",
     "raw/links/home-assistant-example-custom-config- A collection of example custom components for Home Assistant.url",
