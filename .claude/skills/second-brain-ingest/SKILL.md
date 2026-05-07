@@ -128,9 +128,20 @@ Append:
     Processed source-filename.md. Created N new pages, updated M existing pages.
     New entities: [[Entity1]], [[Entity2]]. New concepts: [[Concept1]].
 
-### 8. Mark the source as processed
+### 8. Update the qmd index
 
-Only after all wiki pages are written and the log is updated:
+After all wiki pages are written and the log is updated, refresh the search index so new pages are immediately queryable:
+
+```bash
+qmd update
+qmd embed
+```
+
+`qmd update` re-indexes file contents (BM25/text search). `qmd embed` refreshes vector embeddings for semantic search. Both are needed after creating or modifying wiki pages.
+
+### 9. Mark the source as processed
+
+Only after the index is updated:
 
 ```
 python tools/ingest.py add <path-to-source-file>
@@ -138,7 +149,7 @@ python tools/ingest.py add <path-to-source-file>
 
 This records the file's content hash so it won't appear in `next` again unless the file changes.
 
-### 9. Report results
+### 10. Report results
 
 Tell the user what was done:
 - Pages created (with links)
