@@ -14,19 +14,19 @@ Answer questions by searching and synthesizing knowledge from the wiki.
 
 ## Search Strategy
 
-### 1. Start with the index
+### 1. Search with qmd
 
-Read `wiki/index.md` to identify relevant pages. Scan all category sections (Sources, Entities, Concepts, Synthesis) for entries related to the question.
-
-### 2. Use qmd for large wikis
-
-If `qmd` is installed (check with `command -v qmd`), use it for search:
+Always run qmd first to find relevant pages by relevance ranking:
 
 ```bash
 qmd search "query terms" --path wiki/
 ```
 
-This is especially useful when the wiki has grown beyond ~100 pages where scanning the index becomes inefficient.
+Use the ranked results to prioritize which pages to read.
+
+### 2. Check the index for context
+
+Read `wiki/index.md` to catch any relevant pages qmd may have ranked lower, and to understand the overall knowledge structure.
 
 ### 3. Read relevant pages
 
@@ -52,7 +52,29 @@ Always cite wiki pages using `[[wikilink]]` syntax. Example:
 
 > According to [[Source - Article Title]], the key finding was X. This connects to the broader pattern described in [[Concept Name]], which [[Entity Name]] has also explored.
 
-### Offer to save valuable answers
+### Save every query to output/
+
+After answering, always save the question and answer to `output/` — no confirmation needed:
+
+1. Generate the filename:
+   ```bash
+   slug=$(echo "<question>" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9 ]//g' | tr ' ' '-' | cut -c1-100)
+   filename="output/$(date +%Y%m%d-%H%M%S)-${slug}.md"
+   ```
+2. Write the file:
+   ```markdown
+   ---
+   date: YYYY-MM-DD HH:MM
+   ---
+
+   # <original question>
+
+   ## Answer
+
+   <full answer text>
+   ```
+
+### Offer to save valuable answers as synthesis pages
 
 If the answer produces something worth keeping — a comparison, analysis, new connection, or synthesis — offer to save it:
 

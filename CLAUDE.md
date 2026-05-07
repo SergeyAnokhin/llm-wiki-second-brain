@@ -137,10 +137,10 @@ Run a lint pass (`/second-brain-lint`) on this schedule:
 
 ## Tools
 
-You have access to these CLI tools — use them when appropriate:
+You have access to these CLI tools:
 
-- **summarize** — summarize links, files, and media. Run `summarize --help` for usage.
-- **qmd** — local search engine for markdown files. Run `qmd --help` for usage. Use when the wiki grows beyond what index.md can efficiently navigate.
+- **summarize** — run at the start of every ingest to preview source content before reading the full file. Run `summarize --help` for usage.
+- **qmd** — run at the start of every query to find relevant wiki pages by relevance ranking. Run `qmd --help` for usage.
 - **agent-browser** — browser automation for web research. Use when web_search or web_fetch fail.
 - **tracking.py** — tracks which raw/ files have been processed. Located at `tools/ingest.py`. Run `python tools/ingest.py help` for usage. Use before ingesting to find unprocessed files (`next`), after ingesting to mark files as done (`add`).
 

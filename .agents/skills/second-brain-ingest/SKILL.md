@@ -32,9 +32,17 @@ Determine which files need ingestion:
 
 For each source file, follow this workflow:
 
-### 1. Read the source completely
+### 1. Read the source (with summarize for long files)
 
-Read the entire file. If the file contains image references, note them — read the images separately if they contain important information.
+Read the entire file. For files longer than ~150 lines, first run summarize to get a structural overview before deep-reading:
+
+```bash
+summarize <path-to-source-file>
+```
+
+The summarize output shows structure and key topics upfront; the full read provides the specifics needed for wiki pages. Skip summarize for short files — read directly.
+
+If the file contains image references (e.g. `![](...)`), read those images separately. If an image contains important information (diagrams, charts, data), describe its contents in the wiki page so the knowledge is captured in text form.
 
 ### 2. Discuss key takeaways with the user
 
