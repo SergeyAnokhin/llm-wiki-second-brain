@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1721e563aa807346",
+        "id": "32b5c6d83ac1626e",
         "type": "tabs",
         "children": [
           {
-            "id": "5c43fd55afb3f2e0",
+            "id": "2ca19024af99afed",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "wiki/entities/aaron-godfrey.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "aaron-godfrey"
             }
           }
         ]
@@ -179,8 +183,12 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "6b79167d62ef8dff",
+  "active": "2ca19024af99afed",
   "lastOpenFiles": [
+    "wiki/concepts/custom-component-structure.md",
+    "wiki/concepts/config-flow.md",
+    "Options Flow.md",
+    "wiki/concepts/async-patterns.md",
     "output/toggle_counter/sensor.py",
     "output/toggle_counter/switch.py",
     "output/toggle_counter/__init__.py",
@@ -207,16 +215,12 @@
     "wiki/concepts/data-update-coordinator.md",
     "wiki/concepts/unit-testing-ha.md",
     "wiki/concepts/debugging-devcontainer.md",
-    "wiki/concepts/async-patterns.md",
     "wiki/concepts/options-flow.md",
-    "wiki/concepts/config-flow.md",
     "wiki/concepts/manifest-json.md",
-    "wiki/concepts/custom-component-structure.md",
     "raw/links/home-assistant-core- -house_with_garden- Open source home automation that puts local control and privacy first-.url",
     "Clippings",
     "raw/links/home-assistant-example-custom-config- A collection of example custom components for Home Assistant.url",
     "raw/links/SergeyAnokhin-camera_archiver- Home assiatant Custom component- Camera Archiver.url",
-    "raw/links",
     "raw/image-with-text/0012_project_tree.png"
   ]
 }
