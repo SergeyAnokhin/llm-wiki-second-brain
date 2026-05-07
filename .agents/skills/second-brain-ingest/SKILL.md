@@ -18,10 +18,15 @@ Determine which files need ingestion:
 
 1. If the user specifies a file or files, use those
 2. If the user says "process new sources" or similar, detect unprocessed files:
-   - List all files in `raw/` (excluding `raw/assets/`)
-   - Read `wiki/log.md` and extract all previously ingested source filenames from `ingest` entries
-   - Any file in `raw/` not listed in the log is unprocessed
-3. If no unprocessed files are found, tell the user
+   ```
+   python tools/ingest.py status
+   ```
+   If `unprocessed: 0`, tell the user — nothing to process.
+   Otherwise get the file paths:
+   ```
+   python tools/ingest.py next N
+   ```
+   where N is the number of files you want to process in this session (default: 10).
 
 ## Process Each Source
 
@@ -108,7 +113,17 @@ Append:
     Processed source-filename.md. Created N new pages, updated M existing pages.
     New entities: [[Entity1]], [[Entity2]]. New concepts: [[Concept1]].
 
-### 8. Report results
+### 8. Mark the source as processed
+
+Only after all wiki pages are written and the log is updated:
+
+```
+python tools/ingest.py add <path-to-source-file>
+```
+
+This records the file's content hash so it won't appear in `next` again unless the file changes.
+
+### 9. Report results
 
 Tell the user what was done:
 - Pages created (with links)
