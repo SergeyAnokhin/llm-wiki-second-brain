@@ -11,7 +11,7 @@
 
 
 
-star@DiskStation:~$ cat /etc/synoinfo.conf unique="synology_88f6281_212j" company_title="Synology"
+firstuser@DiskStation:~$ cat /etc/synoinfo.conf unique="synology_88f6281_212j" company_title="Synology"
 system options
 timezone="Amsterdam" language="def" maillang="enu" codepage="enu" defquota="5" defshare="public" defgroup="users" defright="writeable" configured="yes" pswdprotect="no" autoblock_expriedday="0" autoblock_attempts="5" autoblock_attempt_min="60" supportmysql="yes" supportquota="yes" supportitunes="yes" supportddns="yes" supportfilestation="yes" supportssh="yes" supportNFS="yes" supportNFSKerberos="yes" supportrsrcmon="yes" supportmemtest="yes" supportmount="yes" support_fw_security="yes" support_directory_service="yes" support_power_schedule="yes" support_buzzer="yes" support_poweroff="yes" supporttrustdomain="yes" support_ipsec="yes" supportMFP="yes" support_synoacl="yes" support_wireless="yes" support_wireless_number="2" supportMTU="yes" supportrcpower="yes" supportext4="yes" supporthfsplus="yes" support_wimax="yes" showdisktemperature="yes" support_mtd_serial="yes" support_auto_poweron="yes" support_synopkg="yes" supportsmart="yes" supportntfswrite="yes" support_share_encryption="yes" mfp_manualtimer="300" mfp_autotimer="60" buzzeroffcfg="0x8" supportfileindex="yes" disk_warning_percent="0.1" disk_inode_warning_percent="0.05" esata_disk_warning_percent="0.1" esata_partition_warning_percent="0.1" usb_disk_warning_percent="0.05" usb_partition_warning_percent="0.05" sdcard_warning_percent="0.05" sdcard_partition_warning_percent="0.05" supportTc="yes" supportVLAN="yes" support_iscsi_target_block="yes" support_iscsi_target="yes" support_iscsi_lunbkp="yes" support_postgresql_data_checksums="no" support_power_recovery="yes" support_group="yes" support_app_privilege="yes" support_s2s_server="yes" support_task_scheduler="yes" support_disk_report="yes" support_sys_time="yes" support_storage_mgr="yes" support_disk_msgr="yes" retain_admin_pwd="no" support_ez_internet="yes"
 service options
@@ -83,4 +83,4 @@ Fixed items
 login_background_color="#FFFFFF"
 Fixed items
 support_download="yes"
-enable_hibernation_debug="yes" hibernation_debug_level="1" star@DiskStation:~$
+enable_hibernation_debug="yes" hibernation_debug_level="1" firstuser@DiskStation:~$

@@ -47,9 +47,9 @@ NAS снова засыпает через 10 минут
 1. Включить NFS на Synology:
 DSM → Панель управления → Файловые службы → NFS → включить
 2. Дать права на шару:
-DSM → Папки общего доступа → Backup → Права NFS → добавить 192.168.1.15 с правами rw
+DSM → Папки общего доступа → Backup → Права NFS → добавить 192.168.1.99 с правами rw
 3. В Proxmox добавить NFS storage вместо SMB:
-Datacenter → Storage → Add → NFS → указать IP 192.168.1.16
+Datacenter → Storage → Add → NFS → указать IP 192.168.1.99
 4. Добавить WOL hook для бэкапа:
 Создать /etc/vzdump/pre-backup.sh на Proxmox:
 #!/bin/bash
