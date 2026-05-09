@@ -1,8 +1,8 @@
 ---
 tags: [synology, nas, hardware, entity]
-sources: [System info.md]
+sources: [System info.md, nas-hibernation-settings.png, nas-hibernation-log.png]
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-10
 ---
 
 # Synology DS212j
@@ -55,4 +55,4 @@ Used as a personal home-lab backup server and file storage device.
 
 The device is constrained by its 2012-era hardware (256 MB RAM, single-core 1.2 GHz CPU),
 which limits which DSM packages can run and affects background write load.
-See [[HDD Hibernation]] for the hibernation issue investigated on this device.
+See [[HDD Hibernation]] for the full investigation. The HDD Sleep Mode panel (screenshot: [[NAS Hibernation Settings Screenshot]]) was configured with a 10-minute internal standby and enhanced sleep enabled. Post-investigation hibernation logs ([[NAS Hibernation Log Screenshot]]) confirm the NAS was successfully entering sleep after the [[NFS]] migration resolved the blocking SMB sessions.

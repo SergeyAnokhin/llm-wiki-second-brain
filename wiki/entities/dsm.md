@@ -1,8 +1,8 @@
 ---
 tags: [synology, dsm, software, entity]
-sources: [System info.md, cat etc synoinfo.conf.md, terminal 1.md, terminal 2.md]
+sources: [System info.md, cat etc synoinfo.conf.md, terminal 1.md, terminal 2.md, nas-hibernation-settings.png, nas-hibernation-log.png]
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-10
 ---
 
 # DSM
@@ -46,6 +46,14 @@ hibernation_debug_level="1"
 
 Other notable runtime flags: `package_update_channel="beta"`, `ntpdate_server="time.google.com"`,
 `ntpdate_period="daily"`, `dsmtimeout="3600"` (session timeout 1 hour).
+
+## HDD Sleep Mode UI
+
+**Control Panel → Hardware & Power → HDD Sleep Mode** provides a GUI for configuring disk standby (screenshot: [[NAS Hibernation Settings Screenshot]]):
+- Internal/SATA timeout, enhanced sleep mode toggle, USB timeout, sleep log toggle
+- UI values write to `/etc/synoinfo.conf` (e.g. `standbytimer`, `sata_deep_sleep_en`)
+
+See [[HDD Hibernation]] for full configuration details and the investigation results.
 
 ## Log Files
 

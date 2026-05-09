@@ -185,6 +185,8 @@
   },
   "active": "90cfd4bf89aa5e5c",
   "lastOpenFiles": [
+    "wiki/sources/NAS Hibernation Log Screenshot.md",
+    "wiki/sources/NAS Hibernation Settings Screenshot.md",
     "raw/urls/Drive Hibernation - DSM - Synology Knowledge Center.url",
     "raw/images/nas-hibernation-settings.png",
     "raw/images/nas-hibernation-log.png",
@@ -212,7 +214,6 @@
     "wiki/sources/terminal-2-cloudsync-hibernation.md",
     "wiki/sources/terminal-1-disk-io-monitoring.md",
     "wiki/sources/upravlenie-hibernation-debug.md",
-    "wiki/concepts/ssh-key-authentication.md",
     "tools/__pycache__/ingest.cpython-312.pyc",
     "tools/__pycache__"
   ]

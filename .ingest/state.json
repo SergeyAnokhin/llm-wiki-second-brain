@@ -66,6 +66,18 @@
       "path": "raw\\docs\\ssh connection verbosity.md",
       "hash": "5602e7ae0419e0849f7192508ef1461deb1ecb149220e751104655937ab48a00",
       "processed_at": "2026-05-09"
+    },
+    "nas-hibernation-settings.png:37db646490683a67beee4bcd75eb2e451189a94e3898866a619da5317f7c1e4e": {
+      "filename": "nas-hibernation-settings.png",
+      "path": "raw\\images\\nas-hibernation-settings.png",
+      "hash": "37db646490683a67beee4bcd75eb2e451189a94e3898866a619da5317f7c1e4e",
+      "processed_at": "2026-05-10"
+    },
+    "nas-hibernation-log.png:1bee3c2602b029bda78a20332f217dbb40d88299996a1e45429773c7ed7cc51c": {
+      "filename": "nas-hibernation-log.png",
+      "path": "raw\\images\\nas-hibernation-log.png",
+      "hash": "1bee3c2602b029bda78a20332f217dbb40d88299996a1e45429773c7ed7cc51c",
+      "processed_at": "2026-05-10"
     }
   }
 }

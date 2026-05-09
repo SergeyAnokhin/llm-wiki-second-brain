@@ -13,6 +13,8 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[Terminal 3 SSH Reboot]] — Debug lifecycle, network test, system reboot, final cleanup
 - [[NFS Solution]] — SMB→NFS migration guide for Proxmox; WOL pre-backup hook implementation
 - [[SSH Connection Verbosity]] — Verbose SSH handshake log; confirms key fingerprints and cipher suite
+- [[NAS Hibernation Settings Screenshot]] — DSM Control Panel: HDD Sleep Mode tab; 10 min SATA, enhanced sleep enabled, 30 min USB
+- [[NAS Hibernation Log Screenshot]] — Terminal hibernation log; dated wake events April–May 2026 confirm hibernation is working
 ## Entities
 
 - [[Synology DS212j]] — Home-lab NAS device: MARVELL 1.2 GHz, 256 MB RAM, DSM 6.1.7, serial C9KON02643

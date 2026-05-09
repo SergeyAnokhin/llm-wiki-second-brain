@@ -1,13 +1,26 @@
 ---
 tags: [synology, hibernation, hdd, concept]
-sources: [System info.md, cat etc synoinfo.conf.md, Расследование проблемы сна Synology DS212j.md, Управление hibernation debug.md]
+sources: [System info.md, cat etc synoinfo.conf.md, Расследование проблемы сна Synology DS212j.md, Управление hibernation debug.md, nas-hibernation-settings.png, nas-hibernation-log.png]
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-10
 ---
 
 # HDD Hibernation
 
 Disk sleep (hibernation) mode on [[Synology DS212j]] NAS devices — the ability to spin down hard drives after a period of inactivity to reduce power consumption and noise.
+
+## DSM UI Settings
+
+The hibernation timeout is configured in **DSM Control Panel → Hardware & Power → HDD Sleep Mode** (screenshot: [[NAS Hibernation Settings Screenshot]]):
+
+| Setting | Value |
+|---|---|
+| Internal HDD / SATA standby | **10 minutes** |
+| Enhanced sleep mode | **Enabled** |
+| USB HDD standby | **30 minutes** |
+| Sleep logs | **Enabled** |
+
+These UI values correspond 1-to-1 with `/etc/synoinfo.conf` flags: `standbytimer="10"`, `sata_deep_sleep_en="yes"`, `usb_standbytimer="30"`, `disk_wakeup_log_en="yes"`.
 
 ## How It Works
 
@@ -95,6 +108,14 @@ grep '======Idle' /var/log/hibernation.log | sed 's/[^0-9]//g' | sort -n | tail 
 
 Config changes via `synosetkeyvalue` **survive reboots** — DSM reads the flag on next start.
 See [[Управление Hibernation Debug]] for the full command reference.
+
+## Resolution
+
+The hibernation log screenshot ([[NAS Hibernation Log Screenshot]]) shows real wake events recorded across **April–May 2026** — disks that never sleep produce no wake entries. This confirms that [[Synology DS212j]] was successfully entering hibernation after the investigation concluded.
+
+The most likely cause of the fix: migration from SMB to [[NFS]] for [[Proxmox]] backups (see [[NFS Solution]]). NFS is stateless — no persistent session is maintained between accesses — allowing the NAS to sleep between backup runs.
+
+> The conclusion "HDD hibernation is **not achievable**" reflected the state during the SMB-based configuration. After the NFS migration, hibernation became functional.
 
 ## Recommended Alternatives
 

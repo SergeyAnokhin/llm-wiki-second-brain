@@ -2,6 +2,12 @@
 
 Chronological record of all operations.
 
+## [2026-05-10] ingest | NAS Hibernation Settings Screenshot
+Processed raw/images/nas-hibernation-settings.png. Created 1 new page: [[NAS Hibernation Settings Screenshot]]. Updated: [[HDD Hibernation]] (DSM UI section), [[DSM]] (HDD Sleep Mode UI section), [[Synology DS212j]] (notes).
+
+## [2026-05-10] ingest | NAS Hibernation Log Screenshot
+Processed raw/images/nas-hibernation-log.png. Created 1 new page: [[NAS Hibernation Log Screenshot]]. Updated: [[HDD Hibernation]] (Resolution section — confirmed hibernation working after NFS migration).
+
 ## [2026-05-09] lint | Fix broken wikilinks
 Renamed 13 kebab-case files to Title Case with spaces so Obsidian resolves [[wikilinks]] correctly.
 
