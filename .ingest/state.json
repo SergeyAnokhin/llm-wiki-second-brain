@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "processed": {
+    "0012_project_tree.png:40122cbb4617fb23dd14adfb299941a4617f88faa356cd780062074fd87a64e4": {
+      "filename": "0012_project_tree.png",
+      "path": "raw\\images\\0012_project_tree.png",
+      "hash": "40122cbb4617fb23dd14adfb299941a4617f88faa356cd780062074fd87a64e4",
+      "processed_at": "2026-05-08"
+    },
+    "home-assistant-core- -house_with_garden- Open source home automation that puts local control and privacy first-.url:0e5a52c0a332aaea671b1f4c2b60ce4e9d5e2f2fa847ac8fa706e9203b7687cd": {
+      "filename": "home-assistant-core- -house_with_garden- Open source home automation that puts local control and privacy first-.url",
+      "path": "raw\\urls\\home-assistant-core- -house_with_garden- Open source home automation that puts local control and privacy first-.url",
+      "hash": "0e5a52c0a332aaea671b1f4c2b60ce4e9d5e2f2fa847ac8fa706e9203b7687cd",
+      "processed_at": "2026-05-08"
+    }
+  }
+}
