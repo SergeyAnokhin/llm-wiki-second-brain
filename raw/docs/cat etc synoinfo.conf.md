@@ -67,7 +67,7 @@ Fixed items
 custom_login_title="" login_style="light" login_logo_customize="no" login_background_customize="no" login_only_bgcolor="yes" login_welcome_title="" login_welcome_msg="" login_version_logo="no" disk_wakeup_log_en="yes"
 Fixed items
 Fixed items
-disable_volumes="" pushservice_mail_account="anokhin.sergey@gmail.com" pushservice_ds_info_updated="yes" pushservice_dstoken="FQJlWSQI6xn9SuLDTCnL7Cs" pushservice_dsserial="C9KON02643" pushservice_mail_account_updated="yes" pushservice_mail_enabled="yes" pushservice_mobile_enabled="yes" pushservice_last_sending_time="1778044412" pushservice_sending_interval="60" sftpPort="22"
+disable_volumes="" pushservice_mail_account="ivanoff.sergey@gmail.com" pushservice_ds_info_updated="yes" pushservice_dstoken="FQJlWSQI6xn9SuLDTCnL7Cs" pushservice_dsserial="C9KON02643" pushservice_mail_account_updated="yes" pushservice_mail_enabled="yes" pushservice_mobile_enabled="yes" pushservice_last_sending_time="1778044412" pushservice_sending_interval="60" sftpPort="22"
 Fixed items
 Fixed items
 udc_check_state="6.1.7"

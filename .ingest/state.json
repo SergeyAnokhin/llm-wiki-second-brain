@@ -12,6 +12,60 @@
       "path": "raw\\urls\\home-assistant-core- -house_with_garden- Open source home automation that puts local control and privacy first-.url",
       "hash": "0e5a52c0a332aaea671b1f4c2b60ce4e9d5e2f2fa847ac8fa706e9203b7687cd",
       "processed_at": "2026-05-08"
+    },
+    "System info.md:ca8a7ed50f9aa3c95b0e673f7135286ae0127c047fa517789c98e9fff5227bf9": {
+      "filename": "System info.md",
+      "path": "raw\\docs\\System info.md",
+      "hash": "ca8a7ed50f9aa3c95b0e673f7135286ae0127c047fa517789c98e9fff5227bf9",
+      "processed_at": "2026-05-09"
+    },
+    "cat etc synoinfo.conf.md:9549a0691448b0a3f88d44683b2ce9e1f3ffe4cde88b4ebc91702425c26f325f": {
+      "filename": "cat etc synoinfo.conf.md",
+      "path": "raw\\docs\\cat etc synoinfo.conf.md",
+      "hash": "9549a0691448b0a3f88d44683b2ce9e1f3ffe4cde88b4ebc91702425c26f325f",
+      "processed_at": "2026-05-09"
+    },
+    "Расследование проблемы сна Synology DS212j.md:3180f4a2f509dd1d797a22404076d098d8d5a11cf02fe12bb23ddf65937472da": {
+      "filename": "Расследование проблемы сна Synology DS212j.md",
+      "path": "raw\\docs\\Расследование проблемы сна Synology DS212j.md",
+      "hash": "3180f4a2f509dd1d797a22404076d098d8d5a11cf02fe12bb23ddf65937472da",
+      "processed_at": "2026-05-09"
+    },
+    "Управление hibernation debug.md:0ea51fa4e5026d2e6f4a9c10560a2cce5fab80ebe77d0a320a4dd465c69c8a77": {
+      "filename": "Управление hibernation debug.md",
+      "path": "raw\\docs\\Управление hibernation debug.md",
+      "hash": "0ea51fa4e5026d2e6f4a9c10560a2cce5fab80ebe77d0a320a4dd465c69c8a77",
+      "processed_at": "2026-05-09"
+    },
+    "terminal 1.md:0dd892ec9737644f74dc291a5f8654fc4f5db7d48d4e7945d9be563748bce5a8": {
+      "filename": "terminal 1.md",
+      "path": "raw\\docs\\terminal 1.md",
+      "hash": "0dd892ec9737644f74dc291a5f8654fc4f5db7d48d4e7945d9be563748bce5a8",
+      "processed_at": "2026-05-09"
+    },
+    "terminal 2.md:c9ce3b222a9598dfb7478994ccdd7b0a109d0601ca699cade4ca3eb8ede2eeef": {
+      "filename": "terminal 2.md",
+      "path": "raw\\docs\\terminal 2.md",
+      "hash": "c9ce3b222a9598dfb7478994ccdd7b0a109d0601ca699cade4ca3eb8ede2eeef",
+      "processed_at": "2026-05-09"
+    },
+    "terminal 3.md:9c4e800eed2bf67038a21fdcc73a5251c4f0350713a4a3d0638deb378a297c89": {
+      "filename": "terminal 3.md",
+      "path": "raw\\docs\\terminal 3.md",
+      "hash": "9c4e800eed2bf67038a21fdcc73a5251c4f0350713a4a3d0638deb378a297c89",
+      "processed_at": "2026-05-09"
+    },
+    "NFS solution.md:cba74eae5301e0141a3f904789f0cdb696c19cd2bc0e6c1730589961dcc4639a": {
+      "filename": "NFS solution.md",
+      "path": "raw\\docs\\NFS solution.md",
+      "hash": "cba74eae5301e0141a3f904789f0cdb696c19cd2bc0e6c1730589961dcc4639a",
+      "processed_at": "2026-05-09"
+    },
+    "ssh connection verbosity.md:5602e7ae0419e0849f7192508ef1461deb1ecb149220e751104655937ab48a00": {
+      "filename": "ssh connection verbosity.md",
+      "path": "raw\\docs\\ssh connection verbosity.md",
+      "hash": "5602e7ae0419e0849f7192508ef1461deb1ecb149220e751104655937ab48a00",
+      "processed_at": "2026-05-09"
     }
   }
 }

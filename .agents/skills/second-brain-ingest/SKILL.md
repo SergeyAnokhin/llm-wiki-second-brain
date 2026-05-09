@@ -57,7 +57,7 @@ Before writing anything, share the 3-5 most important takeaways from the source.
 
 ### 3. Create source summary page
 
-Create a new file in `wiki/sources/` named after the source (slugified). Include:
+Create a new file in `wiki/sources/` with a Title Case filename that matches the page title exactly — e.g. `wiki/sources/Article Title Here.md` for `# Article Title Here`. Never use kebab-case or slugify. Include:
 
     ---
     tags: [relevant, tags]

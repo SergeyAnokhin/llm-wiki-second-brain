@@ -91,18 +91,18 @@ Each entry in `wiki/log.md`:
 
 ## Page Naming
 
-Filenames use **kebab-case** with `.md` extension. Page titles inside the file use **Title Case**.
+**Filename = page title = wikilink text.** Use Title Case with spaces. Never slugify.
 
-- Source pages: `wiki/sources/article-title-here.md` → `# Article Title Here`
-- Entity pages: `wiki/entities/entity-name.md` → `# Entity Name`
-- Concept pages: `wiki/concepts/concept-name.md` → `# Concept Name`
-- Synthesis pages: `wiki/synthesis/comparison-topic.md` → `# Comparison Topic`
+Obsidian resolves `[[wikilinks]]` by matching the link text against filenames. Spaces and hyphens are not interchangeable — a link `[[SSH Key Authentication]]` will not resolve to `ssh-key-authentication.md`.
 
-When creating `[[wikilinks]]`, use the page title (Title Case), not the filename:
-- Correct: `[[Entity Name]]`
-- Wrong: `[[entity-name]]`
+- Source pages: `wiki/sources/Article Title Here.md` → `# Article Title Here`
+- Entity pages: `wiki/entities/Entity Name.md` → `# Entity Name`
+- Concept pages: `wiki/concepts/Concept Name.md` → `# Concept Name`
+- Synthesis pages: `wiki/synthesis/Comparison Topic.md` → `# Comparison Topic`
 
-To slugify a title into a filename: lowercase, replace spaces with hyphens, remove special characters, trim to reasonable length.
+When creating `[[wikilinks]]`, the text must exactly match the filename (without extension):
+- Correct: `[[Entity Name]]` → file `Entity Name.md`
+- Wrong: `[[entity-name]]` → would fail to resolve
 
 ## Image Handling
 

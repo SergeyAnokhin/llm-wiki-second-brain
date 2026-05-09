@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0abbff067c032c25",
+        "id": "812b0f36fa5ab38b",
         "type": "tabs",
         "children": [
           {
-            "id": "1464db5424ee4381",
+            "id": "90cfd4bf89aa5e5c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "wiki/sources/NFS Solution.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "NFS Solution"
             }
           }
         ]
@@ -179,8 +183,37 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "1464db5424ee4381",
+  "active": "90cfd4bf89aa5e5c",
   "lastOpenFiles": [
-    "raw/Post by @karpathy on X.md"
+    "raw/urls/Drive Hibernation - DSM - Synology Knowledge Center.url",
+    "raw/images/nas-hibernation-settings.png",
+    "raw/images/nas-hibernation-log.png",
+    "wiki/sources/Расследование Проблемы Сна Synology DS212j.md",
+    "wiki/sources/Управление Hibernation Debug.md",
+    "wiki/sources/SSH Connection Verbosity.md",
+    "wiki/index.md",
+    "wiki/concepts/HDD Hibernation.md",
+    "wiki/sources/cat-etc-synoinfo-conf.md",
+    "wiki/sources/Terminal 3 SSH Reboot.md",
+    "wiki/sources/Terminal 2 CloudSync Hibernation.md",
+    "wiki/sources/Terminal 1 Disk IO Monitoring.md",
+    "wiki/sources/NFS Solution.md",
+    "wiki/sources/Cat Etc Synoinfo Conf.md",
+    "wiki/concepts/Wake-on-LAN.md",
+    "wiki/concepts/SSH Key Authentication.md",
+    "wiki/concepts/NFS.md",
+    "wiki/entities/Proxmox.md",
+    "wiki/entities/CloudSync.md",
+    "wiki/sources/ssh-connection-verbosity.md",
+    "wiki/concepts/nfs.md",
+    "wiki/sources/nfs-solution.md",
+    "wiki/entities/cloudsync.md",
+    "wiki/sources/terminal-3-ssh-reboot.md",
+    "wiki/sources/terminal-2-cloudsync-hibernation.md",
+    "wiki/sources/terminal-1-disk-io-monitoring.md",
+    "wiki/sources/upravlenie-hibernation-debug.md",
+    "wiki/concepts/ssh-key-authentication.md",
+    "tools/__pycache__/ingest.cpython-312.pyc",
+    "tools/__pycache__"
   ]
 }
