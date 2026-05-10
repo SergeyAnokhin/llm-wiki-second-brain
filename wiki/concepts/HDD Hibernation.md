@@ -1,6 +1,6 @@
 ---
 tags: [synology, hibernation, hdd, concept]
-sources: [System info.md, cat etc synoinfo.conf.md, Расследование проблемы сна Synology DS212j.md, Управление hibernation debug.md, nas-hibernation-settings.png, nas-hibernation-log.png]
+sources: [System info.md, cat etc synoinfo.conf.md, Расследование проблемы сна Synology DS212j.md, Управление hibernation debug.md, nas-hibernation-settings.png, nas-hibernation-log.png, Drive Hibernation - DSM - Synology Knowledge Center.url, What stops my Synology NAS from entering Hibernation- - Synology Bilgi Merkezi.url]
 created: 2026-05-09
 updated: 2026-05-10
 ---
@@ -62,7 +62,81 @@ Full investigation documented in [[Расследование Проблемы �
 Conclusion: HDD hibernation is **not achievable** in the current configuration.
 Core [[DSM]] services write continuously regardless of network activity.
 
-## Services That Block Hibernation
+## Official List of Hibernation Blockers
+
+Source: [[What Stops Synology NAS from Entering Hibernation]] (Synology KB, last updated Mar 25, 2026).
+
+### Volume Status
+
+- Volume is degraded or crashed
+- No volume has been created
+
+### System Services
+
+| Service / Setting | Notes |
+|---|---|
+| DSM auto-update check running | Scheduled check wakes the system |
+| SMB "Collect debug logs" enabled | Writes continuously |
+| DDNS enabled | Periodic external calls |
+| Data scrubbing schedule | Wakes disks during scrub |
+| DHCP on any LAN | Periodic broadcast traffic |
+| IP conflict detection | Periodic checks |
+| Recycle Bin scheduled task | Wakes system on schedule |
+| Resource Monitor usage history | Continuous write to disk |
+| **File Services (SMB/AFP/FTP/NFS) active** | Any active transfer or SMB/CIFS broadcast — even Windows Explorer on the LAN |
+| IPv6 enabled | Background IPv6 traffic |
+| Domain/LDAP client (DSM ≥ 6.0.1) | Continuous directory polling |
+| Local Master Browser | SMB browsing broadcasts |
+| **NTP service** (syncing other devices) | Periodic NTP server activity |
+| QuickConnect enabled | Relay keepalive traffic |
+| Remote Access enabled | Persistent tunnel |
+| Port forwarding rules configured | Periodic router communication |
+| Security Advisor scheduled scan | Wakes system on schedule |
+| Share Network Location (Web Assistant) | Beacon traffic |
+| S.M.A.R.T. / IronWolf Health test scheduled | Wakes system on schedule |
+| Space Reclamation scheduled | Wakes system on schedule |
+| System Log Tools enabled | Continuous write |
+| SSD Cache in use | Resource Monitor records hit rate continuously |
+| Thumbnails / indexing (synoindexd) | Active when re-indexing after updates |
+| VPN clients | Persistent tunnel keepalives |
+| Windows Media Player Network Sharing | WMP broadcasts on LAN |
+| WriteOnce shared folders | Writes timestamp to drives once per day |
+| RAM exceeded → memory swap | HDD used as swap when RAM full |
+
+### Packages That Block Hibernation
+
+- Synology Directory Server / Active Directory Server
+- Active Backup for Business (and Agent)
+- Active Insight (if enabled)
+- Audio Station (if logging enabled)
+- Calendar
+- Cloud Station Server / Cloud Station ShareSync
+- **[[CloudSync]]** — monitors changes continuously; well-known hibernation blocker
+- Central Management System (CMS)
+- Container Manager
+- LDAP Server / DNS Server
+- Log Center (if devices connected)
+- Download Station (during active tasks)
+- Docker-based packages (Discourse, GitLab, LXQt, Redmine, Spree)
+- Document Viewer
+- Mail Server / Mail Station / MailPlus / MailPlus Server
+- Media Server (if DMA logging enabled)
+- Plex Media Server
+- PetaSpace / Proxy Server
+- Surveillance Station (if devices or tasks configured)
+- Synology Contacts / Synology AI Console / Synology Drive Server
+- Synology Tiering / Tiering Vault
+- Virtual Machine Manager / VPN Server / WebDAV Server
+
+### Other Blockers
+
+- Any third-party package running
+- USB device attached to the NAS
+- Synology Photos app
+
+## Services That Block Hibernation (Investigation Data)
+
+Observed write rates on [[Synology DS212j]] during the hibernation investigation:
 
 | Process | Writes to | Frequency | Can disable? |
 |---|---|---|---|
@@ -119,14 +193,16 @@ The most likely cause of the fix: migration from SMB to [[NFS]] for [[Proxmox]] 
 
 ## Recommended Alternatives
 
-Since hibernation is not achievable, three alternatives are proposed:
+Since hibernation is not achievable with many common configurations, these alternatives are available (confirmed by both investigation and official Synology docs):
 
 **Option A — Power Schedule (recommended):**
 DSM → Hardware & Power → Power Schedule. Configure scheduled shutdown and power-on.
 Works reliably regardless of SMB sessions or background processes.
 
-**Option B — [[Wake-on-LAN]]:**
-NAS shuts down on schedule; backup hosts send a WOL magic packet to wake it before backup.
+**Option B — Auto Poweroff + [[Wake-on-LAN]]:**
+Enable Auto Poweroff in Control Panel → Hardware & Power → Drive Hibernation.
+NAS powers off after drives have been in hibernation for a configured time.
+Enable WOL in Control Panel → Hardware & Power → General → Power Recovery to wake remotely.
 MAC address: `00:11:32:16:b0:6b`.
 
 **Option C — Temporary SMB mounts:**
@@ -136,6 +212,7 @@ Would raise idle from 23 sec to ~57 sec — still not enough for hibernation.
 **Option D — [[NFS]] instead of SMB:**
 NFS is stateless; no persistent session is maintained between accesses.
 This allows the NAS to sleep between backup runs. See [[NFS]] for implementation.
+NFS is **not listed** in the official hibernation blockers article, unlike SMB/AFP/FTP.
 
 ## Related Pages
 
@@ -145,3 +222,5 @@ This allows the NAS to sleep between backup runs. See [[NFS]] for implementation
 - [[Wake-on-LAN]] — proposed alternative to auto-sleep
 - [[NFS]] — stateless protocol proposed as SMB replacement
 - [[Расследование Проблемы Сна Synology DS212j]] — full investigation source
+- [[Drive Hibernation DSM Synology Knowledge Center]] — official DSM 7 UI help (Drive Hibernation panel)
+- [[What Stops Synology NAS from Entering Hibernation]] — official complete blockers list (Synology KB)

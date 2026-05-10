@@ -185,6 +185,8 @@
   },
   "active": "90cfd4bf89aa5e5c",
   "lastOpenFiles": [
+    "wiki/sources/What Stops Synology NAS from Entering Hibernation.md",
+    "wiki/sources/Drive Hibernation DSM Synology Knowledge Center.md",
     "raw/urls/What stops my Synology NAS from entering Hibernation- - Synology Bilgi Merkezi.url",
     "wiki/sources/NAS Hibernation Log Screenshot.md",
     "wiki/sources/NAS Hibernation Settings Screenshot.md",
@@ -213,7 +215,6 @@
     "wiki/entities/cloudsync.md",
     "wiki/sources/terminal-3-ssh-reboot.md",
     "wiki/sources/terminal-2-cloudsync-hibernation.md",
-    "wiki/sources/terminal-1-disk-io-monitoring.md",
     "tools/__pycache__/ingest.cpython-312.pyc",
     "tools/__pycache__"
   ]

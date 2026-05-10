@@ -1,6 +1,6 @@
 ---
 tags: [synology, dsm, software, entity]
-sources: [System info.md, cat etc synoinfo.conf.md, terminal 1.md, terminal 2.md, nas-hibernation-settings.png, nas-hibernation-log.png]
+sources: [System info.md, cat etc synoinfo.conf.md, terminal 1.md, terminal 2.md, nas-hibernation-settings.png, nas-hibernation-log.png, Drive Hibernation - DSM - Synology Knowledge Center.url]
 created: 2026-05-09
 updated: 2026-05-10
 ---
@@ -47,11 +47,20 @@ hibernation_debug_level="1"
 Other notable runtime flags: `package_update_channel="beta"`, `ntpdate_server="time.google.com"`,
 `ntpdate_period="daily"`, `dsmtimeout="3600"` (session timeout 1 hour).
 
-## HDD Sleep Mode UI
+## Drive Hibernation UI
 
-**Control Panel → Hardware & Power → HDD Sleep Mode** provides a GUI for configuring disk standby (screenshot: [[NAS Hibernation Settings Screenshot]]):
+**Control Panel → Hardware & Power → Drive Hibernation** (called "HDD Sleep Mode" in DSM 6.x) provides a GUI for configuring disk standby (screenshot: [[NAS Hibernation Settings Screenshot]]):
 - Internal/SATA timeout, enhanced sleep mode toggle, USB timeout, sleep log toggle
 - UI values write to `/etc/synoinfo.conf` (e.g. `standbytimer`, `sata_deep_sleep_en`)
+- To disable hibernation entirely: select "none" in the first drop-down
+
+Three sub-features in DSM 7 (source: [[Drive Hibernation DSM Synology Knowledge Center]]):
+
+| Feature | Description |
+|---|---|
+| Drive Hibernation | Spins down drives after idle period; configurable separately for internal and eSATA/USB |
+| Deep Sleep | For expansion units only; cuts power to drives, stops fan and all LEDs |
+| Auto Poweroff | Powers off the NAS after drives have been in hibernation for a set time; requires WOL to wake remotely |
 
 See [[HDD Hibernation]] for full configuration details and the investigation results.
 

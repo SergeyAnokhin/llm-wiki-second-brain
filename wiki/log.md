@@ -2,6 +2,12 @@
 
 Chronological record of all operations.
 
+## [2026-05-10] ingest | What Stops Synology NAS from Entering Hibernation
+Processed raw/urls/What stops my Synology NAS from entering Hibernation- - Synology Bilgi Merkezi.url. Created 1 new page: [[What Stops Synology NAS from Entering Hibernation]]. Updated: [[HDD Hibernation]] (added official complete blockers list: 25+ services, 30+ packages), [[DSM]] (frontmatter sources).
+
+## [2026-05-10] ingest | Drive Hibernation DSM Synology Knowledge Center
+Processed raw/urls/Drive Hibernation - DSM - Synology Knowledge Center.url. Created 1 new page: [[Drive Hibernation DSM Synology Knowledge Center]]. Updated: [[HDD Hibernation]] (sources), [[DSM]] (Drive Hibernation UI section expanded with Deep Sleep and Auto Poweroff details).
+
 ## [2026-05-10] ingest | NAS Hibernation Settings Screenshot
 Processed raw/images/nas-hibernation-settings.png. Created 1 new page: [[NAS Hibernation Settings Screenshot]]. Updated: [[HDD Hibernation]] (DSM UI section), [[DSM]] (HDD Sleep Mode UI section), [[Synology DS212j]] (notes).
 

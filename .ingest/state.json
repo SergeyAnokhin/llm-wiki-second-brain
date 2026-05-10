@@ -78,6 +78,18 @@
       "path": "raw\\images\\nas-hibernation-log.png",
       "hash": "1bee3c2602b029bda78a20332f217dbb40d88299996a1e45429773c7ed7cc51c",
       "processed_at": "2026-05-10"
+    },
+    "Drive Hibernation - DSM - Synology Knowledge Center.url:cf192f2220d1f1aaa455433bfe3bbaa800524767bd6e9f65cddb1daa58d30095": {
+      "filename": "Drive Hibernation - DSM - Synology Knowledge Center.url",
+      "path": "raw\\urls\\Drive Hibernation - DSM - Synology Knowledge Center.url",
+      "hash": "cf192f2220d1f1aaa455433bfe3bbaa800524767bd6e9f65cddb1daa58d30095",
+      "processed_at": "2026-05-10"
+    },
+    "What stops my Synology NAS from entering Hibernation- - Synology Bilgi Merkezi.url:284b5514cedebb4161fe728afba086c51ea4eca4d5c423589657606b86135df1": {
+      "filename": "What stops my Synology NAS from entering Hibernation- - Synology Bilgi Merkezi.url",
+      "path": "raw\\urls\\What stops my Synology NAS from entering Hibernation- - Synology Bilgi Merkezi.url",
+      "hash": "284b5514cedebb4161fe728afba086c51ea4eca4d5c423589657606b86135df1",
+      "processed_at": "2026-05-10"
     }
   }
 }

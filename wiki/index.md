@@ -15,6 +15,9 @@ Master catalog of all wiki pages. Updated on every ingest.
 - [[SSH Connection Verbosity]] — Verbose SSH handshake log; confirms key fingerprints and cipher suite
 - [[NAS Hibernation Settings Screenshot]] — DSM Control Panel: HDD Sleep Mode tab; 10 min SATA, enhanced sleep enabled, 30 min USB
 - [[NAS Hibernation Log Screenshot]] — Terminal hibernation log; dated wake events April–May 2026 confirm hibernation is working
+- [[Drive Hibernation DSM Synology Knowledge Center]] — Official DSM 7 help: Drive Hibernation, Deep Sleep, Auto Poweroff explained
+- [[What Stops Synology NAS from Entering Hibernation]] — Official Synology KB: complete list of services, packages, and settings that block hibernation
+
 ## Entities
 
 - [[Synology DS212j]] — Home-lab NAS device: MARVELL 1.2 GHz, 256 MB RAM, DSM 6.1.7, serial C9KON02643
